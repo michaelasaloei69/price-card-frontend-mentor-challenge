@@ -1,0 +1,134 @@
+html {
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif; 
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h2, h4, p {
+	margin: 0px;
+}
+
+body {
+	background-color: darkgray;
+}
+
+.price-grid {
+	margin: 20px;
+	border-radius: 15px;
+	box-shadow: 9px 12px 22px 6px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+
+#pg-top {
+	display: inline-block;
+	width: 100%;
+	padding: 25px;
+	background-color: white; 
+}
+
+#pg-bottom {
+	width: 100%;
+}
+
+#pg-bottom-left {
+	display: inline-block;
+	vertical-align: top; 
+	margin-top: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	background-color: rgb(42, 178, 175);
+}
+
+#pg-bottom-right {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	background-color: rgb(104, 173, 172);
+}
+
+#pg-top > h2{
+	color: rgb(42, 178, 175);
+	margin-bottom: 20px;
+}
+
+#pg-top > h4{
+	color: rgb(192, 223, 52);
+	margin-bottom: 10px;
+}
+
+#pg-top > p{
+	color: rgb(165, 170, 173);
+}
+
+#pg-bottom-left > h4 {
+	color: rgb(229, 239, 245);
+	margin-bottom: 20px;
+}
+
+#pg-bottom-left > p {
+	color: rgb(229, 239, 245);
+	margin-bottom: 10px
+}
+
+#pg-bottom-right > h4 {
+	color: rgb(229, 239, 245);
+}
+
+#pg-bottom-right > ul {
+	color: rgb(204, 221, 230);
+	padding-left: 0px;
+	list-style: none;
+}
+
+#pg-bottom-left-price {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+#pg-bottom-left-monthly {
+	color: rgb(152, 166, 189);
+}
+
+#signup {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(192, 223, 52);
+	color: white;
+	border-radius: 5px;
+	border: none;
+	margin-top: 15px;
+}
+
+#signup:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transform: scale(1.02);
+}
+
+@media (min-width: 660px) {
+	.price-grid {
+		width: 550px;
+		height: 450px;
+	}
+	
+	#pg-top {
+		width: 100%;
+		height: 45%;
+	}
+	
+	#pg-bottom {
+		height: 55%
+	}
+	
+	#pg-bottom-left, #pg-bottom-right {
+		display: inline-block;
+		width: 50%;
+		height: 100%;
+	}
+}
